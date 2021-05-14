@@ -2,121 +2,41 @@
 <html lang="pt-br">
 
 <head>
+    <!--META TAGS IMPORTANTES PARA FUNCIONAMENTO-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- TAG BOOTSTRAP-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <!--TAGS PARA O JAVASCRIPT DO BOOTSTRAP-->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
-    <title>testes</title>
 
-    <style>
-        body {
-            font-family: "Lato", sans-serif;
-        }
+    <!-- TAG PARA ESTILO CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-        .main-head {
-            height: 150px;
-            background: #FFF;
+    <!-- TÍTULO PARA ABA DA WEB -->
+    <title>Sistema</title>
 
-        }
-
-        .sidenav {
-            height: 100%;
-            background-color: #000;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-
-        .main {
-            padding: 0px 10px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-        }
-
-        @media screen and (max-width: 450px) {
-            .login-form {
-                margin-top: 10%;
-            }
-
-            .register-form {
-                margin-top: 10%;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            .main {
-                margin-left: 40%;
-            }
-
-            .sidenav {
-                width: 40%;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-            }
-
-            .login-form {
-                margin-top: 80%;
-            }
-
-            .register-form {
-                margin-top: 20%;
-            }
-        }
-
-
-        .login-main-text {
-            margin-top: 20%;
-            padding: 60px;
-            color: #fff;
-        }
-
-        .login-main-text h2 {
-            font-weight: 300;
-        }
-
-        .btn-black {
-            background-color: #000 !important;
-            color: #fff;
-        }
-    </style>
+    <!-- TAG PARA JAVASCRIPT -->
+    <script src="js/main.js"></script>
 
 </head>
 
 <body>
-    <div class="sidenav">
-        <div class="login-main-text">
-            <h2>Aplicativo<br> Página de login</h2>
-            <p>Faça login ou registre-se aqui para acessar.</p>
+
+    <form>
+        <h1>
+            <script>document.write(`Olá <Strong>${nome}</Strong>`)</script>
+        </h1>
+        <div>
+            <!-- ********* BOTÃO COM LINK DIRETO PARA TELA DE LOGIN ************-->
+            <a href="login.html"><button type="button" class="btn btn-primary">Clica aqui para login</button></a>
         </div>
-    </div>
-    <div class="main">
-        <div class="col-md-6 col-sm-12">
-            <div class="login-form">
-                <form>
-                    <div class="form-group">
-                        <label>Nome do usuário</label>
-                        <input type="text" class="form-control" placeholder="User Name">
-                    </div>
-                    <div class="form-group">
-                        <label>Senha</label>
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-black">Login</button>
-                    <button type="submit" class="btn btn-secondary">Register</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    </form>
+
 </body>
 
 </html>
