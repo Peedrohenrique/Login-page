@@ -21,22 +21,41 @@
     <title>Sistema</title>
 
     <!-- TAG PARA JAVASCRIPT -->
-    <script src="js/main.js"></script>
+    <script>
+            var nome = prompt('Olá, Qual seu nome?')
+
+            if (nome == '' || nome == null) {
+                alert('Digitação Inválida')
+                
+            } else {
+            
+            }
+</script>
 
 </head>
 
-<body>
+<body">
 
-    <form>
-        <h1>
-            <script>document.write(`Olá <Strong>${nome}</Strong>`)</script>
+    <!--Este é um simples componente jumbotron para chamar mais atenção a um determinado conteúdo ou informação.-->
+    <div class="jumbotron">
+        <h1 class="display-4 center">Olá,
+            <script>document.write(`<Strong>${nome}</Strong>`)</script>
         </h1>
-        <div>
-            <!-- ********* BOTÃO COM LINK DIRETO PARA TELA DE LOGIN ************-->
-            <a href="login.html"><button type="button" class="btn btn-primary">Clica aqui para login</button></a>
-        </div>
-    </form>
+        <p class="lead center">Fique à vontade e sinta-se em casa!</p>
+        <hr class="my-4 center">
+        <p>Este é um simples sistema que eu fui desafiado para fazer.</p>
 
+        <div class="center">
+            <!-- ********* BOTÃO COM LINK DIRETO PARA TELA DE LOGIN ************-->
+            <a class="center" href="login.html"><button type="button" class="btn btn-primary center">Clique
+                    aqui</button></a>
+        </div> <!-- ********* FIM DO BOTÃO COM LINK DIRETO PARA TELA DE LOGIN ************-->
+    </div> <!-- Fim do componente jumbotron -->
+
+    <footer class="center">
+        <!--Início do Rodapé-->
+        <strong style="color: #a2aabb;">© copyright 2021. Todos os direitos reservados</strong>
+    </footer> <!-- FIM do Rodapé-->
 </body>
 
 </html>

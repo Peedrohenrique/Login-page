@@ -4,10 +4,21 @@ body{
     position:absolute;
 	left:50%;
 	top:50%;
-	margin-left:-110px;
-	margin-top:-40px;
+	margin-left:-220px;
+	margin-top:-150px;
 }
+
 h1 {
     margin: 30px;
     color: rgb(68, 84, 119);
+}
+
+.center{
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
 }
