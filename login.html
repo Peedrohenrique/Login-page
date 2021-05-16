@@ -11,7 +11,10 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+    
+
+    <!--JAVASCRIPT-->
+    <script src="js/login.js"></script>
 
     <!-- TÍTULO PARA ABA DA WEB -->
     <title>Tela de login</title>
@@ -111,21 +114,18 @@
                 <form>
                     <div class="form-group">
                         <label>Nome do usuário</label>
-                        <input type="text" class="form-control" placeholder="User Name">
+                        <input type="text" class="form-control" placeholder="User Name" id="email">
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" class="form-control" placeholder="Password" id="senha">
                     </div>
-                    <button type="submit" class="btn btn-black">Login</button>
+                    <button onclick="logar()" type="submit" class="btn btn-black">Login</button>
                     <button type="submit" class="btn btn-secondary">Register</button>
                 </form>
             </div>
         </div>
     </div>
-    <script>
-
-    </script>
 </body>
 
 </html>
