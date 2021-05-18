@@ -27,15 +27,28 @@
                 font-size: 3.5rem;
             }
         }
+
+        .c640 {
+            display: block;
+        }
+
+        @media (max-width: 640px) {
+
+            .c640 {
+                display: none;
+            }
+
+        }
     </style>
 
 </head>
 
 <body class="text-center">
 
-    <main class="form-signin"> <!--comando class="bg-white"> caso se quiser trocar-->
+    <main class="form-signin bg-white">
+        <!--comando class="bg-white"> caso se quiser trocar-->
         <form>
-            <img class="mb-4" src="/img/icones.png" alt="" width="72" height="57">
+            <img class="mb-4" src="img/icones.png" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Iniciar Sessão</h1>
 
             <div class="form-floating">
@@ -53,7 +66,7 @@
                 </label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-            <p class="mt-5 mb-3 text-muted">&copy; copyright 2021. Todos os direitos reservados</p>
+            <p class="mt-5 mb-3 text-muted rodape">&copy; copyright 2021. Todos os direitos reservados</p>
         </form>
     </main>
 
