@@ -1,7 +1,7 @@
-function logar(){
-    var email = document.getElementById("email");
-    var senha = document.getElementById("senha");
-
+function entrar(){
+    var email = document.getElementById("login");
+    var senha = document.getElementById("password");
+    
     if(email.value == "admin" && senha.value == "admin"){
         localStorage.setItem("acesso",true);
         alert("usuário autenticado!")
